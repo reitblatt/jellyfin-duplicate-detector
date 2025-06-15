@@ -20,10 +20,7 @@
   
 
   <ItemGroup>
-    <None Include="Configuration\duplicatedetector.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Link>Configuration\duplicatedetector.html</Link>
-    </None>
+    <EmbeddedResource Include="Configuration\duplicatedetector.html" />
   </ItemGroup>
 
   <ItemGroup>
