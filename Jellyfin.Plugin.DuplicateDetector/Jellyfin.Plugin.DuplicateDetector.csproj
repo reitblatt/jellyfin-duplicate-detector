@@ -20,8 +20,11 @@
   
 
   <ItemGroup>
+    <EmbeddedResource Include="Configuration\**"/>
+    </ItemGroup>
+  <!-- <ItemGroup>
     <EmbeddedResource Include="Configuration\duplicatedetector.html" />
-  </ItemGroup>
+  </ItemGroup> -->
 
   <ItemGroup>
     <Folder Include="Configuration\" />
