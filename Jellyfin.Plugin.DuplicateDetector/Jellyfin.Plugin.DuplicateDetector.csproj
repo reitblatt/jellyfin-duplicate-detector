@@ -18,16 +18,17 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
   </ItemGroup>
   
-
+  <!-- Embed HTML files as resources -->
   <ItemGroup>
-    <EmbeddedResource Include="Configuration\**"/>
-    </ItemGroup>
-  <!-- <ItemGroup>
-    <EmbeddedResource Include="Configuration\duplicatedetector.html" />
-  </ItemGroup> -->
+      <EmbeddedResource Include="Configuration\*.html"> 
+        <LogicalName>Jellyfin.Plugin.DuplicateDetector.Configuration.duplicatedetector.html </LogicalName>
+    </EmbeddedResource>
+</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
+  <!-- Optional: Copy configuration files to output (for debugging) -->
+<ItemGroup>
+  <None Include="Configuration\*.html">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
 </Project> 

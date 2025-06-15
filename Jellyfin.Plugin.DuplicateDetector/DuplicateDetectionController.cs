@@ -77,7 +77,7 @@ namespace Jellyfin.Plugin.DuplicateDetector;
         [HttpGet("Configuration")]
         public PluginConfiguration GetConfiguration()
         {
-            return Plugin.Instance.Configuration;
+            return DuplicateDetectorPlugin.Instance.Configuration;
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Jellyfin.Plugin.DuplicateDetector;
         [HttpPost("Configuration")]
         public async Task UpdateConfiguration([FromBody] PluginConfiguration config)
         {
-            await Plugin.Instance.UpdateConfigurationAsync(config);
+            await DuplicateDetectorPlugin.Instance.UpdateConfigurationAsync(config);
         }
 
         /// <summary>
