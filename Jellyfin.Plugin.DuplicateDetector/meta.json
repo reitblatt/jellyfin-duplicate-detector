@@ -1,0 +1,13 @@
+{
+  "id": "b1e7e7e0-8c2e-4e2a-9b1e-duplicate-detector",
+  "name": "Duplicate Detector",
+  "version": "1.0.0",
+  "description": "Detects duplicate videos in your Jellyfin library.",
+  "targetAbi": "10.10.0.0",
+  "framework": "net8.0",
+  "owner": "YourName",
+  "category": "Library",
+  "artifacts": [
+    "Jellyfin.Plugin.DuplicateDetector.dll"
+  ]
+} 
